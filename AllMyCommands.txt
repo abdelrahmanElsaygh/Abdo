@@ -1,0 +1,17 @@
+git init
+git add First.txt
+git add Second.txt
+git add Third.txt
+git commit -m "adding three txt files"
+git rm --cached Second.txt
+git add Second.txt
+git commit -m "adding second again"
+git push
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m "adding a readme file"
+git checkout master
+git pull origin master
+git merge ReadMe
+git push origin master
